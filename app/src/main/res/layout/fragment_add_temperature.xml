@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTemperatureFragment"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:contentDescription="@string/background_pills"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pills_bg_color_corrected" />
+
+    <LinearLayout
+        android:id="@+id/temperatureInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/rounded_edittext_light_accent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/howMuchIsTheTemperatureText"
+            android:padding="7dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/temperature"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/temperatureHint"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:background="@drawable/rounded_edittext_light_accent"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/submitNewTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setButtonText"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</FrameLayout>

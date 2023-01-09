@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTemperatureFragment"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:contentDescription="@string/background_pills"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pills_bg_color_corrected" />
+
+    <ListView
+        android:id="@+id/temperatureList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:padding="15dp"
+        android:divider="@null"
+        android:dividerHeight="10dp" />
+</FrameLayout>

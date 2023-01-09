@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/rounded_edittext_medium"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/medicineCellTitle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Title"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/medicineCellTimesADay"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Times a day 2 Hours apart"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/medicineCellDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="4 Days Total"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right">
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/trash_bin"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</LinearLayout>

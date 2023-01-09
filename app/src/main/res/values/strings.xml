@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Get Well Soon</string>
+    <string name="medicineName">Въведете име на лекарството</string>
+    <string name="setButtonText">Задай</string>
+    <string name="yesText">Да</string>
+    <string name="noText">Не</string>
+    <string name="multipleDailyIntakesText">Повече от веднъж на ден?</string>
+    <string name="hoursBetweenIntakes">През колко часа?</string>
+    <string name="dailyIntakeCount">Дневна доза</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="background_pills">Background pills</string>
+    <string name="notificationSet">Напомнянето е задено</string>
+    <string name="invalidData">Невалидни данни</string>
+    <string name="invalidName">Липсва име на лекарството</string>
+    <string name="newMedicineActivityButton">Ново Лекарство</string>
+    <string name="toMedicineListText">Текущи лекарства</string>
+    <string name="howManyDaysText">Колко дни?</string>
+    <string name="medicineDeleted">Успешно изтриване</string>
+    <string name="generatedJokeText">Генерирана шега</string>
+    <string name="temperatureText">Температура</string>
+    <string name="addTemperatureText">Добави Температура</string>
+    <string name="temperatureListText">Списък Температури</string>
+    <string name="howMuchIsTheTemperatureText">Колко е температурата?</string>
+    <string name="temperatureHint">37.5</string>
+    <string name="temperatureTitle">Температура</string>
+    <string name="temperatureDate">12.01.2023 12:34</string>
+    <string name="temperatureSet">Температурата е зададена!</string>
+</resources>

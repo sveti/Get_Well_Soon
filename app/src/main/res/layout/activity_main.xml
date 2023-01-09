@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:contentDescription="@string/background_pills"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pills_bg_color_corrected" />
+
+    <LinearLayout
+        android:id="@+id/menuButtons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddMedicineActivity"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10sp">
+
+        <Button
+            android:id="@+id/toAddMedicineActivity"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="@string/newMedicineActivityButton"
+            android:textColor="@color/white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/toMedicineList"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="@string/toMedicineListText"
+            android:textColor="@color/white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/toTemperatures"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="@string/temperatureText"
+            android:textColor="@color/white"
+            tools:ignore="ButtonStyle" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jokeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AddMedicineActivity"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10sp"
+        android:layout_alignBottom="@id/menuButtons">
+
+        <TextView
+            android:id="@+id/generatedJokeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_light_accent"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text="@string/generatedJokeText" />
+    </LinearLayout>
+
+
+</RelativeLayout>

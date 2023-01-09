@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#95DBE5">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".AddMedicineActivity"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/medicineName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/medicineName"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                tools:ignore="Autofill"
+                android:background="@color/orange_500"
+                android:padding="10dp" />
+
+
+            <TimePicker
+                android:id="@+id/medicineStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5dp"
+                android:background="@drawable/rounded_edittext_light_accent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/multipleDailyIntakesText"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/multiple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yesText"
+                    android:checked="true"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/multipleIntakesOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="7dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_edittext_medium">
+
+                <LinearLayout
+                    android:id="@+id/hoursBeteenIntakesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/black"
+                        android:text="@string/hoursBetweenIntakes" />
+
+                    <EditText
+                        android:id="@+id/medicineTimeInterval"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/two"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:background="@drawable/rounded_edittext_light_accent"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/hoursBeteenIntakesLayout"
+                    android:layout_marginVertical="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/black"
+                        android:text="@string/dailyIntakeCount" />
+
+                    <EditText
+                        android:id="@+id/medicineTimesADay"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/two"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:background="@drawable/rounded_edittext_light_accent"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/rounded_edittext_light_accent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/howManyDaysText"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/medicineDays"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/three"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_edittext_light_accent"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="7dp">
+
+                <Button
+                    android:id="@+id/submitNewMedicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setButtonText"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
